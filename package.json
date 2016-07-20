@@ -1,6 +1,6 @@
 {
   "name": "spy-on-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Subscribe to React component lifecycle hooks",
   "main": "index.js",
   "scripts": {
