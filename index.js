@@ -9,7 +9,6 @@ var LIFECYCLE_HOOKS = {
   componentWillUnmount: true,
 }
 
-
 function wrap(base, method) {
   var before = true;
 
@@ -22,14 +21,15 @@ function wrap(base, method) {
     return method;
 
   return function wrappedLifecyclehook() {
-    before && method.apply(arguments)
-    base.apply(arguments)
-    !before && method.apply(arguments)
+    before && method.apply(this, arguments)
+    base.apply(this, arguments)
+    !before && method.apply(this, arguments)
   }
 }
 
 module.exports = function spyOnComponent(component, hooks) {
   var originals = Object.create(null);
+
 
   for (var key in hooks) if (LIFECYCLE_HOOKS[key])
     component[key] = wrap(
