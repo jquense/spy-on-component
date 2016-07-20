@@ -2,7 +2,7 @@
 var LIFECYCLE_HOOKS = {
   componentWillMount: true,
   componentDidMount: true,
-  componentWillRecieveProps: true,
+  componentWillReceiveProps: true,
   shouldComponentUpdate: true,
   componentWillUpdate: true,
   componentDidUpdate: true,
