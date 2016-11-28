@@ -30,7 +30,6 @@ function wrap(base, method) {
 module.exports = function spyOnComponent(component, hooks) {
   var originals = Object.create(null);
 
-
   for (var key in hooks) if (LIFECYCLE_HOOKS[key])
     component[key] = wrap(
       originals[key] = component[key],
@@ -43,4 +42,9 @@ module.exports = function spyOnComponent(component, hooks) {
     else for (var key in originals)
       component[key] = originals[key]
   }
+}
+
+module.exports.mixin = function mixinIntoComponent(componentClass, hooks) {
+  spyOnComponent(componentClass.prototype, hooks)
+  return componentClass;
 }
