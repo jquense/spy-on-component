@@ -1,6 +1,6 @@
 {
   "name": "spy-on-component",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Subscribe to React component lifecycle hooks",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,9 @@
       "@semantic-release/npm",
       {
         "path": "@semantic-release/git",
-        "assets": ["package.json"]
+        "assets": [
+          "package.json"
+        ]
       }
     ],
     "prepare": [
