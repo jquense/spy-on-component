@@ -33,6 +33,7 @@ let reset = spyOnComponent(component, {
 assert(true, 'it didnt have runtime errors')
 //
 //
+//
 ;((/* it should wrap methods */) => {
   component.componentWillMount()
 
