@@ -77,6 +77,25 @@
     parse-github-url "^1.0.1"
     url-join "^4.0.0"
 
+"@semantic-release/github@^4.2.16":
+  version "4.2.16"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-4.2.16.tgz#4a6458198ebd3dcdb344e220e3d68af94d585cca"
+  dependencies:
+    "@octokit/rest" "^15.2.0"
+    "@semantic-release/error" "^2.2.0"
+    aggregate-error "^1.0.0"
+    bottleneck "^2.0.1"
+    debug "^3.1.0"
+    fs-extra "^6.0.0"
+    globby "^8.0.0"
+    issue-parser "^2.0.0"
+    lodash "^4.17.4"
+    mime "^2.0.3"
+    p-filter "^1.0.0"
+    p-retry "^2.0.0"
+    parse-github-url "^1.0.1"
+    url-join "^4.0.0"
+
 "@semantic-release/npm@^3.2.0", "@semantic-release/npm@^3.2.2":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-3.2.2.tgz#e4cc7e4d09d51099e132cd8bbe5adfae08f1078a"
@@ -1318,6 +1337,14 @@ fs-extra@^5.0.0:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
+fs-extra@^6.0.0:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-6.0.1.tgz#8abc128f7946e310135ddc93b98bddb410e7a34b"
+  dependencies:
+    graceful-fs "^4.1.2"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
+
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
@@ -1801,6 +1828,12 @@ issue-parser@^1.0.2:
   dependencies:
     lodash "^4.17.4"
 
+issue-parser@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/issue-parser/-/issue-parser-2.0.0.tgz#3766a4092f6b84f5774162ce9c26d0e3f3fcd679"
+  dependencies:
+    lodash "^4.17.4"
+
 isurl@^1.0.0-alpha5:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isurl/-/isurl-1.0.0.tgz#b27f4f49f3cdaa3ea44a0a5b7f3462e6edc39d67"
@@ -2216,6 +2249,12 @@ p-cancelable@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/p-cancelable/-/p-cancelable-0.4.0.tgz#bcb41d35bf6097fc4367a065b6eb84b9b124eff0"
 
+p-filter@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/p-filter/-/p-filter-1.0.0.tgz#629d317150209c8fd508ba137713ef4bb920e9db"
+  dependencies:
+    p-map "^1.0.0"
+
 p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
@@ -2236,6 +2275,10 @@ p-locate@^2.0.0:
   dependencies:
     p-limit "^1.1.0"
 
+p-map@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/p-map/-/p-map-1.2.0.tgz#e4e94f311eabbc8633a1e79908165fca26241b6b"
+
 p-reduce@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/p-reduce/-/p-reduce-1.0.0.tgz#18c2b0dd936a4690a529f8231f58a0fdb6a47dfa"
@@ -2245,6 +2288,12 @@ p-retry@^1.0.0:
   resolved "https://registry.yarnpkg.com/p-retry/-/p-retry-1.0.0.tgz#3927332a4b7d70269b535515117fc547da1a6968"
   dependencies:
     retry "^0.10.0"
+
+p-retry@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/p-retry/-/p-retry-2.0.0.tgz#b97f1f4d6d81a3c065b2b40107b811e995c1bfba"
+  dependencies:
+    retry "^0.12.0"
 
 p-timeout@^2.0.1:
   version "2.0.1"
@@ -2519,6 +2568,10 @@ ret@~0.1.10:
 retry@^0.10.0:
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/retry/-/retry-0.10.1.tgz#e76388d217992c252750241d3d3956fed98d8ff4"
+
+retry@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/retry/-/retry-0.12.0.tgz#1b42a6266a21f07421d1b0b54b7dc167b01c013b"
 
 right-align@^0.1.1:
   version "0.1.3"
