@@ -47,7 +47,7 @@ module.exports = function spyOnComponent(component, hooks) {
       component[key] = wrap((originals[key] = component[key]), hooks[key])
 
   return function reset(key) {
-    const subject = STATIC_HOOKS[key] ? component.constructor : component
+    var subject = STATIC_HOOKS[key] ? component.constructor : component
 
     if (key && key in originals) subject[key] = originals[key]
     else for (var key in originals) subject[key] = originals[key]
