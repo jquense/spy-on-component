@@ -1,3 +1,11 @@
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/jquense/spy-on-component/compare/v1.1.1...v1.1.2) (2018-05-30)
+
+
+### Bug Fixes
+
+* another const ([2321886](https://github.com/jquense/spy-on-component/commit/2321886))
+
 <a name="1.1.1"></a>
 
 # 1.0.0 (2018-05-24)
