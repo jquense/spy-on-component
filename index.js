@@ -24,7 +24,7 @@ function wrap(base, method, isStatic) {
   if (!base) return method
 
   return function wrappedLifecyclehook() {
-    const ctx = isStatic ? null : this
+    var ctx = isStatic ? null : this
     before && method.apply(ctx, arguments)
     base.apply(ctx, arguments)
     !before && method.apply(ctx, arguments)
