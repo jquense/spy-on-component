@@ -1,3 +1,14 @@
+## [1.1.3](https://github.com/jquense/spy-on-component/compare/v1.1.2...v1.1.3) (2020-03-05)
+
+
+### Bug Fixes
+
+* remove unnecessary var breaking babel ([107331c](https://github.com/jquense/spy-on-component/commit/107331c80baeb358fee42c7fea95fa05ef213309))
+
+
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/jquense/spy-on-component/compare/v1.1.1...v1.1.2) (2018-05-30)
 
