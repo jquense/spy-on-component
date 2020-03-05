@@ -50,7 +50,7 @@ module.exports = function spyOnComponent(component, hooks) {
     var subject = STATIC_HOOKS[key] ? component.constructor : component
 
     if (key && key in originals) subject[key] = originals[key]
-    else for (var key in originals) subject[key] = originals[key]
+    else for (key in originals) subject[key] = originals[key]
   }
 }
 
